@@ -68,12 +68,17 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "host": "0.0.0.0",
+            "port": 4200,
+            "browserTarget": "front:build"
+          },
           "configurations": {
             "production": {
-              "buildTarget": "TheGame:build:production"
+              "browserTarget": "front:build:production"
             },
             "development": {
-              "buildTarget": "TheGame:build:development"
+              "browserTarget": "front:build:development"
             }
           },
           "defaultConfiguration": "development"
