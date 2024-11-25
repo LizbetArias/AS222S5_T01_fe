@@ -75,10 +75,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "front:build:production"
+              "buildTarget": "TheGame:build:production"
             },
             "development": {
-              "browserTarget": "front:build:development"
+              "buildTarget": "TheGame:build:development"
             }
           },
           "defaultConfiguration": "development"
